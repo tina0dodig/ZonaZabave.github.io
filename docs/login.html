@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Prijava</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="w-screen h-screen"
+    style="background-image: url(slike/pozadina.jpeg); background-repeat: no-repeat; background-size: cover; background-position: center;">
+    <div class="bg-[rgba(0,0,0,0.3)] h-screen w-screen">
+        <form action="login.html" method="post"
+            class="obrazac flex flex-col items-center justify-center mx-auto space-y-4 p-4 absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] 
+               bg-[rgba(255,255,255,0.3)] text-center rounded-md shadow-3xl h-[300px] md:h-[500px] w-[300px] md:w-[500px]"
+            onsubmit="ispravnaPrijava(event)">
+            <h1 class="text-white uppercase font-[700] text-3xl">Prijava</h1>
+            <input type="text" name="" placeholder="Korisničko ime" id="ime"
+                class="block mx-4 my-4 text-center border-1 border-solid border-gray-200 p-2 outline-none text-white rounded-md w-[220px] md:w-[420px]">
+            <input type="password" placeholder="Lozinka" id="lozinka"
+                class="block mx-4 my-4 text-center border-1 border-solid border-gray-200 p-2 outline-none text-white rounded-md w-[220px] md:w-[420px]">
+            <input type="submit" name="" value="Prijava"
+                class="block mx-4 my-4 text-center border-1 border-solid border-gray-200 p-2 outline-none text-white rounded-md cursor-pointer w-[220px]">
+        </form>
+    </div>
+    <script src='login.js'></script>
+</body>
+
+</html>

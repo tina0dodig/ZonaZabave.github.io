@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Igra vješala</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <link rel='stylesheet' type='text/css' media='screen' href='vjesalo.css'>
+</head>
+
+<body class="overflow-hidden">
+  <div class="navbar bg-gradient-to-l from-indigo-100 to-indigo-300 shadow-sm">
+    <div class="navbar-start">
+        <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                    stroke="white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h7" />
+                </svg>
+            </div>
+            <ul tabindex="0"
+                class="menu menu-sm dropdown-content bg-[rgba(0,0,0,0.2)] rounded-box z-1 mt-3 w-54 p-2 shadow text-white">
+                <li><a href="../zonaZabave.html">Zona zabave</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="navbar-center">
+        <a class="text-2xl text-white">Zona zabave</a>
+    </div>
+    <div class="navbar-end ">
+        <span id="imeKorisnika" class="text-indigo-400 font-bold text-lg mr-2"></span>
+        
+    </div>
+</div>
+  <div
+    class="bg-radial-[at_50%_75%] from-indigo-100 via-indigo-300 to-indigo-400 to-90% w-full h-screen flex items-center justify-center">
+    <div
+      class="igra text-sm bg-[rgba(255,255,255,0.4)] w-[90vw] max-w-[34em] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] p-4 rounded-lg shadow-md">
+      <div id="opcije" class="text-center w-full flex flex-col justify-between"></div>
+      <div id="slova" class="slova hide w-full flex flex-wrap justify-center gap-2"></div>
+      <div id="upis" class="flex justify-center text-md m-8"></div>
+      <canvas id="canvas"></canvas>
+      <div id="novaIgra"
+        class="novaIgra hide bg-[rgba(255,255,255,0.8)] absolute left-0 top-0 h-full w-full flex justify-center items-center flex-col rounded-md">
+        <div id="ispis"></div>
+        <button id="btn-novaIgra"
+          class="min-w-[200px] h-[40px] text-lg bg-indigo-300 border-2 border-solid border-indigo-400 text-indigo-400 font-bold uppercase rounded-md cursor-pointer">Igraj
+          ponovno!</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="vjesalo.js"></script>
+</body>
+
+</html>
