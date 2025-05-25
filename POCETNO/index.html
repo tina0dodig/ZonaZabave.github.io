@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Zona zabave</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+</head>
+
+<body class="overflow-hidden">
+  <!--Ideja stranice je da sve krene od index.html-a te da su tu dostpne stranice kontakt i o nama i onda se krene u avanturu, nakon prijave dolazi se do dostupnih igrica-->
+  <div class="navbar bg-sky-900 shadow-sm">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="white">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" />
+          </svg>
+        </div>
+        <ul tabindex="0"
+          class="menu menu-sm dropdown-content bg-[rgba(0,0,0,0.4)] rounded-box z-1 mt-3 w-52 p-2 shadow text-white">
+          <li><a href="#">Početna stranica</a></li>
+          <li><a href="oNama.html">O nama</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="navbar-center">
+      <a class="text-2xl text-white">Zona zabave</a>
+    </div>
+    <div class="navbar-end">
+
+      </button>
+    </div>
+  </div>
+
+  <div class="hero w-screen h-screen overflow-hidden" style="background-image: url(slike/VR.jpeg);">
+    <div class="hero-overlay bg-[rgba(0,0,0,0.7)]"></div>
+    <div class="hero-content text-neutral-content text-center">
+      <div class="max-w-3xl">
+        <h1 class="mb-5 text-5xl font-bold md:text-6xl">Zona zabave</h1>
+        <p class="mb-5 text-md md:text-xl">
+          U Zoni zabave, svaka avantura ima svoja pravila, ali način na koji igraš biraš samo ti.<br>
+          Istraži, osvoji, nadmudri, nasmij se i uživaj u svijetu gdje svaki klik donosi novu dozu zabave.
+        </p>
+        <a href="login.html"><button class="btn bg-sky-900 text-white border-0">Kreni u avanturu!</button></a>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src='main.js'></script>
+</body>
+
+</html>
