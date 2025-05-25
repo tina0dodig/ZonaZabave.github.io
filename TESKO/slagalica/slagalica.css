@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#igra img {
+    width: 118px;
+    height: 118px;
+    border: 1px solid #0c67ae;
+    object-fit: cover;
+}
+
+#igra {
+    display: grid;
+    gap: 1px;
+    width: fit-content;
+}
+
+@media only screen and (max-width: 600px) {
+    #igra img {
+        width: auto;
+        height: auto;
+    }
+
+    #igra {
+        gap: 0;
+    }
+}

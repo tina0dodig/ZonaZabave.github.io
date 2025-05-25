@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Križić-Kružić</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel='stylesheet' type='text/css' media='screen' href='krizic-kruzic.css'>
+</head>
+
+<body class="overflow-hidden">
+    <div class="navbar bg-gradient-to-l from-sky-200 to-sky-950 shadow-sm">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                        stroke="white">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h7" />
+                    </svg>
+                </div>
+                <ul tabindex="0"
+                    class="menu menu-sm dropdown-content bg-[rgba(0,0,0,0.2)] rounded-box z-1 mt-3 w-54 p-2 shadow text-white">
+                    <li><a href="../docs/zonaZabave.html">Zona zabave</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="navbar-center">
+            <a class="text-2xl text-white">Zona zabave</a>
+        </div>
+        <div class="navbar-end">
+            <span id="imeKorisnika" class="text-sky-800 font-bold text-lg mr-2"></span>
+            </button>
+        </div>
+    </div>
+    <div class="sve flex min-h-screen w-full ">
+        <video autoplay loop muted playsinline class="video">
+            <source src="video.mp4" type="video/mp4">
+        </video>
+        <div id="igra"
+            class="igra text-center bg-[rgba(255,255,255,0.3)] min-w-[330px] min-h-[500px] m-auto justify-center items-center shadow-md rounded-xl md:min-w-[550px] min-h-[550px]">
+            <h1 class="font-bold text-3xl text-blue-300 p-4 md:text-4xl lg:text-5xl">Križić-Kružić</h1>
+            <div id="kucice" class="py-8 grid grid-cols-3 w-[225px] m-auto text-center">
+                <div kuciceIndex="0"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300 text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="1"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300  text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="2"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300 text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="3"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300 text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="4"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300  text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="5"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300 text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="6"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300  text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="7"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300  text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+                <div kuciceIndex="8"
+                    class="kucica w-[75px] h-[75px] border-2 border-blue-300 ring-2 ring-blue-300  text-indigo-200 text-5xl cursor-pointer flex justify-center items-center">
+                </div>
+            </div>
+            <h3 id="stanje"
+                class="rounded-xl w-[250px] p-2 bg-blue-300 text-center m-auto uppercase text-white text-sm font-bold">
+            </h3>
+            <div class="py-12">
+                <botton onclick="resetirajIgru()" id="resetiraj"
+                    class="p-4 bg-indigo-300 text-white uppercase font-bold rounded-xl">Igraj ponovno!</botton>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src='krizic-kruzic.js'></script>
+</body>
+
+</html>
